@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Porcal</title>
+        <link rel="stylesheet" href="style.css">
+		<link rel="icon" href="logo.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="//db.onlinewebfonts.com/c/1d4d7dd348a7632d33c193edf4827f87?family=Biome" rel="stylesheet" type="text/css"/>
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+        <div class="container-fluid bg-dark" id="cal_Screen">
+            <div class="container-fluid" id="input_Area">
+                <input disabled="true" class="form-control form-control-lg bg-dark" id="result">
+            </div>
+
+            <div class="container-fluid	" id="button_Area">
+                <div class="row">
+                    <button class="btn btn-dark col" onclick="dis('1')">1</button>
+                    <button class="btn btn-dark col" onclick="dis('2')">2</button>
+                    <button class="btn btn-dark col" onclick="dis('3')">3</button>
+                    <button class="btn btn-dark col" onclick="back()">←</button>
+                </div>
+
+                <div class="row">
+                    <button class="btn btn-dark col" onclick="dis('4')">4</button>
+                    <button class="btn btn-dark col" onclick="dis('5')">5</button>
+                    <button class="btn btn-dark col" onclick="dis('6')">6</button>
+                    <button class="btn btn-dark col" onclick="dis(' + ')">+</button> 
+                </div>
+
+                <div class="row">
+                    <button class="btn btn-dark col" onclick="dis('7')">7</button>
+                    <button class="btn btn-dark col" onclick="dis('8')">8</button>
+                    <button class="btn btn-dark col" onclick="dis('9')">9</button>
+                    <button class="btn btn-dark col" onclick="dis(' - ')">-</button>
+                </div>
+
+                <div class="row">
+                    <button class="btn btn-dark col" onclick="dis('0')">0</button>
+                    <button class="btn btn-dark col" onclick="solve(); define()">=</button>
+					<button class="btn btn-dark col" onclick="dis(' / ')">/</button>
+                    <button class="btn btn-dark col" onclick="dis(' * ')">*</button>
+                </div>
+            </div> 
+        </div>
+    </body>
+</html>
